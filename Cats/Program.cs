@@ -4,9 +4,11 @@ namespace Cats
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            // Try out your skills with inheritance here!
+            Cat catwoman = new HouseCat("catwoman", 13);
+
+            (catwoman as HouseCat).IsSatisfied();
         }
     }
 }
